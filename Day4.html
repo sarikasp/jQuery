@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Fourth</title>
+
+    <style> 
+         body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+        #box{
+            background: #ff99dd ;
+            padding: 10px;
+            border: 1px solid#000;
+        }
+
+        #box2{
+            background: #8080ff;
+            padding: 10px;
+            border: 1px solid#000;
+        }
+        #test{
+            background: lightsteelblue;
+            padding: 5px;
+        }
+        .red{color: navy;}
+        .first{ background: orange; }
+        .second{ background: red; }
+
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Minskole....</h1>
+  
+<!-- REMOVE & EMPTY METHODS -->
+    
+    <!-- <div id="box2" style="width: 30%;">
+    <h2> Remove & Empty Methods:</h2>
+    <p>The empty() method removes all <span>child nodes and</span> content from the selected elements.
+        The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                
+    </div><br> 
+                
+    <button id="btnEmpty">Empty</button>
+    <button id="btnRemove">Remove</button>
+
+
+    <script src="js/jquery.js"></script>
+    <script>     
+        $(document).ready(function(){
+
+            // // empty div element
+            // $("#btnEmpty").click(function(){
+            //     $("#box2").empty();
+            // });
+
+
+            // // remove h2 element in div
+            // $("#btnEmpty").click(function(){
+            //     $("#box2 h2").empty();
+            // });
+        
+
+            // // remove div element:
+            // $("#btnRemove").click(function(){
+            //     $("#box2").remove();
+            // });
+        
+        }); 
+        </script> -->
+
+    
+        <!-- Clone METHOD -->
+
+    <!-- <div id="box" style="width: 30%;">
+        <h2>Clone Method:</h2>
+        <p>The clone() method makes a copy of <span>selected elements,</span>
+             including child nodes, text and attributes.</p>
+                
+        </div><br> 
+
+        <div id="box2" style="width: 30%;">
+            <p>This is another DIV</span> </p>
+        </div><br>
+                
+        <button id="btnClone">Clone</button>
+
+        <script src="js/jquery.js"></script>
+        <script>     
+        $(document).ready(function(){
+            $("#btnClone").click(function(){
+            
+                // clone heading box1 to box2
+                $("#box h2").clone().prependTo("#box2");
+
+                // clone paragraph box1 to box2
+                $("#box p").clone().appendTo("#box2");
+                });
+            }); 
+        </script> -->
+
+
+    <!-- ReplaceWith() & ReplaceAll() Methods -->
+     
+    <!-- <div id="box2" style="width: 30%;">
+    <h2>ReplaceWith() & ReplaceAll() Methods:</h2>
+        <p>The replaceWith() method <span>replaces selected</span> elements with new content.</p>
+        <p>The replaceAll() method replaces selected elements with new HTML elements.</p>
+        <p>The .replaceAll() method removes all data and event handlers associated with the removed nodes.</p>
+    </div><br> 
+
+    <button id="replaceBtn">Replace</button>
+    <script src="js/jquery.js"></script>
+    <script>     
+    $(document).ready(function(){
+        $("#replaceBtn").click(function(){
+
+        // // replace ong tag to another tag
+        // $("#box2 p:first").replaceWith("<h3>MinSkole</h3>");
+         
+        // // replace second paragraph to another tag
+        // $("#box2 p:nth-child(3)").replaceWith("<h3>MinSkole</h3>");   
+        
+        // // replace all content of div to another content
+        // $("<h3>MinSkole</h3>").replaceAll("#box2 p");
+
+        //  $("<h3>MinSkole</h3>").replaceAll("#box2 p:first");
+        });
+    }); 
+</script> -->
+
+
+<!-- WRAP() & UNWRAP() METHODS -->
+
+    <!-- <div id="box2" style="width: 30%;">
+    <h2>Wrap & Unwrap Methods:</h2>
+    <p>The wrap() method wraps specified <span>HTML element(s)</span>around each selected element.</p>
+       <p> The unwrap() method removes the parent element of the selected elements.</p>
+    </div><br> 
+    <button id="btnWrap">Wrap</button>
+    <button id="btnUnwrap">Unwrap</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnWrap').click(function(){
+            
+                // wrapone tag to another tag
+                // $("#box2 p").wrap('<div id="test"></div>');
+                $("#box2 p").wrap('<h2></h2>');
+            });
+                
+            $('#btnUnwrap').click(function(){
+
+                // unwrap one tag to another tag
+                // $("#box2 p").wrap('<div id="test"></div>');
+                $("#box2 p").unwrap();
+            });
+         });
+    </script>  -->
+
+
+     <!-- WrapAll & WrapInner Meethods -->
+
+<!-- <p>jQuery wrapAll() method is used to wrap specified HTML elements 
+    around all selected elements, in a set of matched elements.</p>
+
+    <p>The jQuery wrapInner() method is used to wrap an HTML 
+        structure around the content of each element in the set of matched element. <br> 
+        This method can accept any string or object that could be passed to the $() factory function.</p>
+    <br> 
+    <button id="btnWrapall">WrapAll</button>
+    <button id="btnWrapinner">WrapInner</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnWrapall').click(function(){
+
+                // wrap tags
+                $("p").wrapAll('<div id="test"></div>');
+                });
+            
+            $('#btnWrapinner').click(function(){                
+                $("h1").wrapInner("<span class='red'></span>");
+                });
+         });
+</script> -->
+
+
+<!-- jQuery Width & Height Methods -->
+    <!-- 
+        width(), height(), innerWidth(), innerHeight(), outerWidth(), 
+        outerHeight(), outerWidth(true), outerHeight(true) -->
+
+    <div id="box2"  style="width: 30%;">
+    <h2>Width & Height Methods: </h2>
+        <p>The width() method sets or returns the width of the <span>selected elements.</span>  
+            The height() method sets or returns the height of the selected elements.</p>
+    </div><br> 
+    <button id="btnWidth">Width</button>
+    <button id="btnHeight">Height</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnWidth').click(function(){ 
+
+                // set width for div
+                $('#box2').width("400px");
+                            
+                // display width for content in div
+                console.log("Width : " + $("#box2").width());
+
+                // display width for div  without border
+                console.log("Inner Width : " + $("#box2").innerWidth());
+                        
+                // display width for outer div with border
+                console.log("Outer Width : " + $("#box2").outerWidth());
+                            
+                // display width with it's margin
+                console.log(" Outer Width(true) : " + $("#box2").outerWidth(true));
+            });                    
+                        
+            $('#btnHeight').click(function(){  
+
+                // set height for div
+                $("#box2").height("150px");
+
+                // display height for content in div
+                console.log("Height : " + $("#box2").height());
+
+                // display height for div without border
+                console.log("Inner Height : " + $("#box2").innerHeight());
+
+                //  display height for outer div with border
+                console.log("Outer Height : " + $("#box2").outerHeight());
+
+                // display height with it's margin
+                console.log(" Outer Height(true) : " + $("#box2").outerHeight(true));
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

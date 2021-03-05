@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Seven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            font-family: Constantia;
+            background-image: url('img/background.jpg');
+            background-repeat: no-repeat;
+        }
+
+        #main-outer{
+            background: #000033;
+            padding: 10px;
+            border: 2px solid#000;
+            width: 30%;
+            color: white;
+        }
+
+        #outer{
+            background: #000080;
+            padding: 10px;
+            border: 2px solid#000;       
+        }
+
+        #inner{
+            background: #0000cc;
+            padding: 10px;
+            border: 2px solid#000;       
+        }
+
+        div{
+            background: #3333ff;
+            padding: 20px;
+            border: 2px solid#000; 
+        }
+
+        #first{
+            background: thistle;
+            width: 30%;
+        }
+        #second{
+            background:rgb(228, 197, 140);
+            width: 30%;
+        }
+
+        #result{
+            background: rgb(109, 235, 228);
+            width: 30%;
+            height: 200px;
+        }
+
+        #box{
+            background: rgb(144, 201, 79);
+            width: 2%;
+            height: 10px;
+        }
+
+
+            </style>
+</head>
+
+
+<body>
+
+    <h1>Welcome to Minskole....</h1>
+
+<!-- Ancestors Methods -->
+    
+<!-- parent, parentsUntil, closest, offsetParent -->
+
+<!-- <div id="main-outer" style="position: relative;">
+<h2>Main Outer</h2>
+<div id="outer"> 
+<h2>Outer</h2>
+<div id="inner">
+<h2 id="child-head">Inner</h2>
+<div>A</div>
+<div>B</div>
+<div id="child-C">C</div>
+<div>D</div>
+</div>
+</div>
+</div> 
+
+<script src="js/jquery.js"></script>
+<script>
+    $('document').ready(function(){
+        // //Parent:
+        // $('#child-C').parent().css('background', '#cc0052');
+        // $('#inner').parent().css('background', '#cc0052');
+
+        // // Parents:
+        // $('#child-C').parents().css('background', '#cc0052');
+        // $('#inner').parents().css('background', '#cc0052');
+        // $('#inner').parents('#main-outer').css('background', '#cc0052');
+
+        // //parentsUntil:
+        // $('#child-C').parentsUntil('#main-outer').css('background', '#cc0052');
+        // $('#inner').parentsUntil('#main-outer').css('background', '#cc0052');
+
+        // offsetParent:
+        // $('#inner').offsetParent().css('background', '#cc0052');
+        // $('#child-C').offsetParent().css('background', '#cc0052');
+
+        // closest
+        // $('#child-C').closest('div').css('background', '#cc0052');
+        // $('#child-C').closest('ul').css('background', '#cc0052');
+            
+
+     });
+</script>  -->
+
+<!-- Descendants Methods: -->
+<!-- children & find method: -->
+
+<!-- <div id="main-outer"  style="position: relative;">
+<h2>Main Outer</h2>
+<div id="outer">  
+<h2 class="test">Outer</h2>
+<div id="inner">
+<h2 id="child-head">Inner</h2>
+<div>A</div>
+<div>B</div>
+<div class="test">C</div>
+<div>D</div>
+</div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+
+<script>
+    $('document').ready(function(){
+    // children()
+    // $('#inner').children().css('background', '#cc0052');
+    // $('#outer').children().css('background', '#ff0066');
+    // $('#inner').children('.test').css('background', '#cc0052');
+
+    // find()
+    // $('#inner').find('.test').css('background', '#cc0052');
+    $('#main-outer').find('.test').css('background', '#cc0052');
+    });
+</script> -->
+        
+
+<!-- Siblings Methods: -->
+<!-- Siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil() -->
+         
+<!-- <div id="main-outer">
+    <h2>Main Outer</h2>
+    <div id="outer">  
+    <h2 class="test">Outer</h2>
+    <div id="inner">
+    <h2>Inner</h2>
+    <div class="test">A</div>
+    <div>B</div>
+    <div>C</div>
+    <div  id="child-C">D</div>
+    <div class="test">E</div>
+    </div>
+    </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+            // siblings()
+            // $('#child-C').siblings().css('background', '#e600ac');
+            // $('#child-C').siblings('h2').css('background', '#e600ac');
+            // $('#child-C').siblings('.test').css('background', '#e600ac');
+                    
+            // next()
+            //  $('#child-C').next().css('background', '#e600ac');
+
+            // prev()
+            // $('#child-C').prev().css('background', '#e600ac');
+
+            // prevAll()
+            //  $('#child-C').prevAll().css('background', '#e600ac');
+
+            // nextALl()
+            $('#child-C').nextAll().css('background', '#e600ac');
+    
+            // // nextUntil()
+            // $('#child-C').nextUntil('.test').css('background', '#ff0066');
+                    
+            // // prevUntil()
+            // $('#child-C').prevUntil('.test').css('background', '#ff0066');
+        });
+    </script> -->
+            
+
+
+    <!-- Filtering Methods:
+        first(), last(), eq(), filter(), not(), slice() -->
+
+    <!-- <h2>Filtering Methods:</h2>
+    <div id="first">
+        <p>The first() method returns the first element of the selected elements.</p>
+        <p>The last() method returns the last element of the selected elements.</p>
+        <p>The eq() method returns an element with a specific index number of the selected elements.</p> 
+        </div>
+        <ul>
+            <li>Orchids</li>
+            <li>Dahlia</li>
+            <li>Daisy</li>
+            <li>Aster</li>
+            <li>Tulip</li>
+        </ul>
+
+        <div id="second">
+        <p class="test">The not() method returns elements that do not match a certain criteria.
+            The slice() method selects a subset of elements based on its index.
+        </p>
+        <p>The filter() method is used to filter out all the elements that do not match
+             the selected criteria and those matches will be returned.</p>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $('document').ready(function(){
+                // first()
+                // $('p').first().css('background', 'gold');
+                // $('div p').first().css('background', 'gold');
+                // $('#second p').first().css('background', 'gold');
+                // $('ul li').first().css('background', 'gold');
+
+                // last()
+                // $('p').last().css('background', 'gold');
+                // $('ul li').last().css('background', 'gold');
+
+                // eq()
+                // $('ul li').eq(2).css('background', 'gold');
+                // $('p').eq(-1).css('background', 'gold');
+                // $('p').eq(-2).css('background', 'gold');
+
+                // filter()
+                // $('p').filter('.test').css('background', 'gold');
+                // $('p.test').css('background', 'gold');
+
+                // not()
+                // $('p').not('.test').css('background', 'gold');
+                // $('#second p').not('.test').css('background', 'gold');
+
+                // // slice()
+                // $('ul li').slice(2).css('background', 'gold');
+                // $('ul li').slice(1).css('background', 'gold');
+                // $('ul li').slice(1,3).css('background', 'gold');
+                // $('ul li').slice(0,3).css('background', 'gold');
+                // $('p').slice(1,3).css('background', 'gold');
+                
+            }); 
+        </script>   -->
+                       
+
+    <!-- has() & is() Methods: -->
+
+    <div id="first">
+    <p>The has() method returns all elements that have one or more elements inside of them, that matches the specified selector. </p>
+    <p><b> The has() is an inbuilt method in jQuery which is used to find all the elements inside the specified list of elements.</b></p>
+    </div>
+    <ul>
+            <li>Orchids</li>
+            <li><span>Dahlia</span></li>
+            <li>Daisy</li>
+            <li><b>Aster</b></li>
+            <li>Tulip</li>
+        </ul>
+    <p class="test">The is() method checks if one of the selected elements matches the selectorElement.</p>       
+    <p>The is( selector ) method checks the current selection against an expression and returns true,<br> 
+        if at least one element of the selection fits the given selector.
+        If no element fits,<br> <b> <span class="test">or the selector is not valid, then the response will be 'false'.</b> </span></p>
+     
+    <script src="js/jquery.js"></script>
+    <script>
+    $('document').ready(function(){
+    
+        //has():
+        // $('p').has('span').css('background', 'blue');
+        // $('p').has('b,span').css('background', 'blue');
+        // $('li').has('b,span').css('background', 'blue');
+        // $('p').has('.test').css('background', 'blue');
+
+        // // is():
+        // if($('p').parent().is('div')){
+        //     console.log($('p').parent().is('div'));
+        // }
+
+        // $('p').click(function(){
+        //     if($(this).parent().is('div')){
+        //         $(this).css('background', 'purple');
+        //     }
+        // });
+
+    });
+    </script>
+
+   
+</body>
+</html>

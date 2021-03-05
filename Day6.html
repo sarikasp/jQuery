@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Six</title>
+
+    <style> 
+         body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+            #box2{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            /* border: 10px solid#000; */
+            border: 2px solid#000;
+            width: 30%;
+        }
+        #box4{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            /* border: 10px solid#000; */
+            border: 2px solid#000;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Minskole....</h1>
+
+    <!-- Fade Methods:
+                fadeIn()
+                fadeOut()
+                fadeToggle()
+                fadeTO() -->
+
+    <!-- <div id="box2" class="test">
+    <h2 class="test">Fade Methods: </h2>
+    <p>Lorem ipsum <span>dolor sit amet </span>  
+        vero autem inventore aliquam saepe ullam.</p>
+    </div><br> 
+    <button id="btnFadeOut">FadeOut</button>
+    <button id="btnFadeIn">FadeIn</button>
+    <button id="btnFadeToggle">FadeToggle</button>
+    <button id="btnFadeTo">FadeTo</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){            
+            $('#btnFadeOut').click(function(){ 
+                // $('#box2').fadeOut(); 
+                // $('#box2').fadeOut('slow'); 
+                // $('#box2').fadeOut('fast'); 
+                $('#box2').fadeOut(1000); 
+                $('#box2').fadeOut(3000, function(){
+                    console.log("Now it is Hidden");
+                }); 
+            });
+            $('#btnFadeIn').click(function(){ 
+                // $('#box2').fadeIn(); 
+                //  $('#box2').fadeIn('slow');  
+                // $('#box2').fadeIn('fast');
+                // $('#box2').fadeIn(3000); 
+                $('#box2').fadeIn(3000, function(){
+                    console.log("Now it is Shown");
+                }); 
+            });
+
+            $('#btnFadeToggle').click(function(){ 
+                $('#box2').fadeToggle(2000, function(){
+                    console.log("Hey Toggle..!!!!");
+                }); 
+            });
+
+            $('#btnFadeTo').click(function(){ 
+                // $('#box2').fadeTo(2000, 0.2); 
+                $('#box2').fadeTo(2000,0.2, function(){
+                    console.log("Hey Toggle..!!!!");
+                }); 
+            });
+
+    });
+</script> -->
+
+
+    <!-- Effect: slide Methods:
+        slideUp(), slideDown(), slideToggle() -->
+
+
+    <!-- <div id="box2" class="test">
+    <h2 class="test">Slide Methods:</h2>
+    <p>The Slide effect can be used with <span> show/hide/toggle.</span> 
+        This slides the element out of the viewport.</p>
+    </div><br> 
+    <button id="btnSlideUp">SlideUp</button>
+    <button id="btnSlideDown">SlideDown</button>
+    <button id="btnSlideToggle">SlideToggle</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){            
+        $('#btnSlideUp').click(function(){ 
+            //$('#box2').slideUp(); 
+            // $('#box2').slideUp('slow'); 
+            // $('#box2').slideUp('fast'); 
+            // $('#box2').slideUp(1000); 
+            $('#box2').slideUp(3000, function(){
+                console.log("Now it is Hidden");
+            }); 
+        });
+        $('#btnSlideDown').click(function(){ 
+            // $('#box2').slideDown(); 
+            // $('#box2').slideDown('slow');  
+            // $('#box2').slideDown('fast'); 
+            // $('#box2').slideDown(1000);
+            $('#box2').slideDown(1000, function(){
+                console.log("Now it is Shown");
+            }); 
+        });
+        $('#btnSlideToggle').click(function(){ 
+            //  $('#box2').slideToggle();
+            // $('#box2').slideToggle('slow');
+            // $('#box2').slideToggle('fast');
+            // $('#box2').slideToggle(1000);
+            $('#box2').slideToggle(1000, function(){
+                console.log("Hey Toggle..!!!!");
+            }); 
+        });
+
+    });
+    </script> -->
+
+
+    <!-- Animate Methods -->
+
+
+    <!-- <div id="box4"> Animate Methods...!!!!</div>
+    <br> 
+    <button id="btnAnimate">Animate</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+        $('#btnAnimate').click(function(){
+            // $('#box4').animate({
+                //     left: '150px',
+                //     // width : '+150px',
+                //     // width : 'hide',
+                //        width : 'toggle',
+                //        fontSize : '25px',
+                //        borderWidth : '5px'
+            // });
+            
+            // $('#box4').animate({left : '150px', fontSize : '25px'});
+            // $('#box4').animate({left : '150px', fontSize : '25px'}, "slow");
+            // $('#box4').animate({left : '150px', fontSize : '25px'}, "fast");
+            // $('#box4').animate({left : '150px', fontSize : '25px'}, 3000);
+            $('#box4').animate({left : '150px', fontSize : '25px'}, 3000, function(){
+                console.log("Animation Successfully....!!!!");
+            });
+            $('#box4').animate({top : '150px'});
+            $('#box4').animate({width : '250px'});
+        });
+        });
+        </script> -->
+
+<!-- Animate Stop Methods -->
+
+<!-- <div id="box2"> Animate Stop Methods...!!!!</div>
+<br> 
+<button id="btnAnimate">Animate</button>
+<button id="btnStop">Stop</button>
+<script src="js/jquery.js"></script>
+<script>
+    $('document').ready(function(){
+        $('#btnAnimate').click(function(){        
+            $('#box2').animate({left : '150px'}, 3000);
+            $('#box2').animate({fontSize : '25px'}, 2000);
+        });
+
+        $('#btnStop').click(function(){        
+            // $('#box2').stop();
+            // $('#box2').stop(true);
+            $('#box2').stop(true, true);
+        });
+    });
+</script> -->
+
+
+<!-- Method Chaining: -->
+
+    <div id="box2"> 
+    <h2>Method Chaining:</h2>
+    <p>Chaining allows us to run multiple jQuery methods <span> (on the same element)</span> 
+        within a single statement.</p>
+    </div><br>
+    <button id="animateBtn">Animate</button>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $('document').ready(function(){
+            $('#animateBtn').click(function(){        
+                $('#box2').css('background', 'pink').slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

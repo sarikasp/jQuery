@@ -1,0 +1,240 @@
+              <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Eight</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+
+        #result{
+            background: #0066ff;
+            width: 30%;
+            height: 200px;
+        }
+
+        #box1{
+            background: rgb(144, 201, 79);
+            width: 2%;
+            height: 20px;
+        }
+        #box{
+           background: rgb(109, 235, 228);
+           padding: 10px;
+           border: 2px solid#000;
+           width: 30%;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<h1>Welcome to Minskole....</h1>
+
+<!-- each() Method: -->
+
+<!-- <ul>
+        <li>Orachid</li>
+        <li>Rose</li>
+        <li>Lily</li>
+        <li>Daisy</li>
+        <li>Oleander</li>
+    </ul> 
+<script src="js/jquery.js"></script>
+<script>
+    $('document').ready(function(){
+        // each():
+        $('li').each(function(){
+            $(this).text("Welcome");
+        });
+    });
+</script> -->
+
+<!-- pageX & pageY -->
+<!-- jQuery Event Object: Properties & Methods: -->
+
+    <!-- <div id="result"></div><br>
+    <div id="box1"></div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+            // // pageX:
+            // $(document).mousemove(function(event){
+            //     $('#result').text("X: " + event.pageX);
+            // });
+
+            //  // pageY:
+            //  $(document).mousemove(function(event){
+            //     $('#result').text("X: " + event.pageX + "Y: " + event.pageY);
+            // });
+
+            // pageY:
+            $(document).mousemove(function(event){
+            $('#result').text("X: " + event.pageX + "Y: " + event.pageY);
+                var x = event.pageX;
+                var y = event.pageY;
+                $('#box1').offset({top:y, left:x});
+            });
+        });
+    </script> -->
+
+
+    <!-- event.type: -->
+
+    <!-- <div id="result"></div>
+    <h2></h2>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+        $('#result').on("click dbclick mouseover mouseout", function(event){
+                $('h2').html("Event: " + event.type)         
+            });
+        });                  
+    </script> -->
+
+<!-- event.which: -->
+
+    <!-- <div id="box"></div>
+    <br>
+    <input type="text" id="inputBox">
+    <br>
+    <h2></h2>
+    <script src="js/jquery.js"></script>
+     
+    <script>
+        $('document').ready(function(){
+            $('#box').on("mouseover mouseout mousedown", function(event){
+                  $('h2').html(event.type + ": " + event.which);         
+                  });
+
+                  $('#inputBox').on('keydown', function(){
+                    $('h2').html(event.type + ": " + event.which); 
+                  });
+            });                  
+    </script> -->
+
+<!-- event.target: -->
+
+<!-- <div id="box"> 
+<h2> Event Target:</h2>
+<p>The event.target property returns which <span>DOM element triggered</span> the event.
+    It is often useful to compare event.target to this in order to 
+    determine if the event is being handled due to event bubbling.</p>
+<button>Test Button</button>
+</div><br>
+<h3></h3>
+<script src="js/jquery.js"></script>
+<script>
+    $('document').ready(function(){
+    $('#box').on("click", function(){
+        //  $('h3').html("Target Element: " + event.target.nodeName);         
+        $('h3').html("Target Element: " + event.target.innerHTML);  
+        });
+    });                  
+</script> -->
+
+
+<!-- event.preventDefault(): -->
+
+    <!-- <div id="box"> 
+        <h2>Minskole</h2>
+        <a href="http://www.minskole.in" id="result">MinSkole Website</a>
+        <br><br>
+        <a href="http://www.minskole.online">MinSkole Testing Website</a>
+    </div><br>
+    <h2></h2>
+    <script src="js/jquery.js"></script>
+     
+    <script>
+        $('document').ready(function(){
+            $('#result').click(function(event){
+                event.preventDefault();  
+
+                var a = event.isDefaultPrevented();
+                $('h2').html(a);
+              });
+            });                  
+    </script> -->
+
+
+<!-- event.stopPropagation(), event.isPropagationStopped(): -->
+
+<!-- <div id="box"> 
+    <h2>Event StopPropagation & Event IsPropagationStopped:</h2>
+    <p>The event.stopPropagation() method stops the <span>bubbling of an event to </span> 
+        parent elements, preventing any parent event handlers from being executed.
+        The event.isPropagationStopped() method checks whether event.stopPropagation() was called for the event.</p>
+    <button>Button</button>
+    </div><br>
+    <h3></h3>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('document').ready(function(){
+        $('#box').click(function(){
+            alert("The div element was clicked");  
+        });
+
+        // $('h2').click(function(){
+        // alert("The h2 element was clicked");  
+        // });
+
+        // $('p').click(function(){
+        //     alert("The p element was clicked");  
+        // });
+
+        $('button').click(function(){
+            alert("The button element was clicked");  
+        });
+
+
+//  // stopPropagation():
+    //   $('p').click(function(event){
+    //     event.stopPropagation();
+    //     alert("The p element was clicked");  
+    //   });
+
+    // // isPropagationStopped():
+    //  $('p').click(function(event){
+    //     event.stopPropagation(); // true
+    //     alert("The p element was clicked" + event.isPropagationStopped());  
+    //   });
+    
+    // $('p').click(function(event){ // false
+    //     alert("The p element was clicked" + event.isPropagationStopped());  
+    // });
+
+    });                  
+</script> -->
+    
+
+ <!-- event.data(): -->
+
+<div id="box"> 
+<h2>Event Data:</h2>
+<p>The event.data property contains the optional data passed to an
+    event method when the current executing handler is bound.</p>
+
+<p>An optional object of data passed to an event method 
+    when the current executing handler is bound.</p>
+
+<p>This is optional parameter is a map of data 
+    that will be passed to the event handler.</p>         
+</div><br>
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('p').each(function(i){
+        $(this).on("click", {value:i}, function(event){
+                alert(event.data.value);
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

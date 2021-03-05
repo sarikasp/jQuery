@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day third</title>
+
+    <style> 
+         body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+
+        #box{
+            background: #ff0066;
+            padding: 10px;
+            border: 1px solid#000;
+        }
+        #box1{
+            padding: 10px;
+            border: 1px solid#000;
+        }
+
+        #box2{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            border: 1px solid#000;
+        }
+        .boxbg{
+            background: pink;
+        }
+
+        .txtcolor{color: #006600;}
+        .first{ background: #0000cc; }
+        .second{ background: #8d043b; }
+
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Minskole....</h1>
+
+    <!-- SET METHODS -->
+    <!-- text() 
+         html() 
+         attr() 
+         val() -->
+
+        <!-- <div id="box" class="test" style="width: 30%;">
+        <h2>SET Methods:</h2>
+        <p>All of the three jQuery methods above: <span>text(), html(), and val(),</span> 
+            also come with a callback function. The callback function has two parameters: 
+            the index of the current element in the list of elements selected and the 
+            original (old) value. You then return the string you wish to use as the new value from the function.</p>
+        </div><br>
+        <button id="buttonClick">Set Value</button>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('#buttonClick').click(function(){
+
+                    // // change heading text
+                    // $('#box h2').text("Hello MinSkole");
+
+                    
+                    // // change paragraph text
+                    // $('#box p').text("This is new paragraph text...!!!!");
+
+                    
+                        // // change html tag, it is used only text
+                        // $('#box p').html("This <b> is new </b> text...!!!!");
+
+
+                    // add class
+                    $('#box h2').attr("class", 'txtcolor');
+                
+                });
+            });
+        </script>  -->
+
+
+        <!-- val() method -->
+
+        <!-- <form action="" id="sform">
+            <label for="name">Name: </label>
+            <input type="text" id="sname"><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="sclass"><br><br>
+ 
+            <button>Submit</button>
+        </form>
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+               $('#sname').val('Gauri Pansare');
+               $('#sclass').val('MinSKole');          
+            });
+        </script> -->
+          
+
+          <!-- CSS CLASS METHODS -->
+
+<!-- addClass()
+     removeClass()
+     toggleClass() -->
+
+
+        <!-- <div id="box1" style="width: 30%;">
+            <h2>CSS Class Methods:</h2>
+            <p>Lorem ipsum <span>dolor sit amet </span>  
+                vero autem inventore aliquam saepe ullam.</p>
+
+        </div><br>
+        <button id="buttonAdd">Add Class</button>
+        <button id="buttonRemove">Remove Class</button>
+        <button id="buttonToggle">Toggle Class</button>
+
+        <script src="js/jquery.js"></script>
+        <script>     
+           
+                             
+        </script> -->
+
+
+                <!-- Inline CSS -->
+
+        <!-- <div id="box1" style="width: 30%;">
+            <h2>Inline CSS:</h2>
+            <p> <span>The css()</span> method sets or returns one or more
+                 style properties for the selected elements.</p>
+    
+        </div><br>
+        <button id="buttonStyle">Add Style</button>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#buttonStyle').click(function(){
+
+                    // // apply single css property
+                    // $('#box1').css("background", '#66d9ff');
+
+                    // apply multiple css properties
+                    $('#box1').css({"background":'#66d9ff', "color":"#002633", "border":"5px dotted green"});
+                });
+            });
+        </script> -->
+
+
+                <!-- On() off() Methods -->
+
+                <!-- <div id="box1" style="width: 30%;">
+                    <h2>On & off Methods:</h2>
+                    <p>The off() method is most often used to remove event 
+                        handlers attached with the <span>on() method</span>. As of jQuery 
+                        version 1.7, the off() method is the new replacement 
+                        for the unbind(), die() and undelegate() methods.</p>
+            
+                </div><br>
+                <button>Remove Event</button>
+                <script src="js/jquery.js"></script>
+                <script>
+                    $(document).ready(function(){
+        
+                        
+                        // $('#box1').on("mouseover mouseout", function(){
+                        //     $(this).toggleClass("boxbg");
+                        // });
+        
+        
+                        $('#box1').on({
+        
+                            // // change color click on box 
+                           "click": function(){
+                               $(this).css("background", "orange");
+                           },
+        
+                             // // change color mouseover on box 
+                           "mouseover": function(){
+                                $(this).css("background", "pink");
+                            },
+        
+                              // // change color mouseout on box 
+                            "mouseout": function(){
+                                $(this).css("background", "lightblue");
+                            }
+                        });
+        
+                    });
+                    
+        
+                    $("button").click(function(){
+                        $("#box1").off("mouseover mouseout")
+                    }); 
+                
+                </script> -->
+
+
+        
+           <!-- jQuery Append Prepend methods -->
+
+
+            <!-- <div id="box2" style="width: 30%;">
+                <h2>Append & Prepend Methods:</h2>
+                <p>The append() method inserts <span>specified content</span> at the end of the selected elements.
+                    The prepend() method inserts specified content at the beginning of the selected elements.</p>
+        
+            </div><br> 
+        
+           <button id="btnAppend">Append</button>
+            <button id="btnPrepend">Prepend</button>
+        
+            <script src="js/jquery.js"></script>
+            <script>     
+                $(document).ready(function(){
+
+                    // // add content after paragraph paragraph
+                    $("#btnAppend").click(function(){
+                        $("#box2").append("<h2>Knowledge Brings Reform</h2>");
+                    });
+
+                    // // add content before paragraph paragraph
+                    $("#btnPrepend").click(function(){
+                        $("#box2").prepend("<h1>MinSkole</h1>");
+                    });
+                });
+        </script> -->
+
+
+         <!-- AFTER BEFORE METHOD -->
+
+                <div id="box2" style="width: 30%;">
+                    <h2>After & Before Methods:</h2>
+                    <p>The before() method inserts <span>specified content</span>  in front of (before) the selected elements.  
+                        The after() method inserts specified content after the selected elements.</p>
+            
+                </div><br> 
+            
+               <button id="btnAfter">After</button>
+                <button id="btnBefore">Before</button>
+            
+                <script src="js/jquery.js"></script>
+                <script>     
+                    $(document).ready(function(){
+
+                        // // add content after div element
+                        $("#btnAfter").click(function(){
+                            $("#box2").after("<h3>After Add MinSkole</h3><p>knowledge being reform</p>");
+                        });
+    
+                        // // add content before div element
+                        $("#btnBefore").click(function(){
+                            $("#box2").before("<h3>Before Add MinSkole</h3><p>knowledge being reform</p>");
+                        });
+    
+                    });
+       </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Second</title>
+    <link rel="stylesheet" href="css/style.css">
+            <style>
+                body{
+                    font-family: Constantia;
+                    background-image: url('img/background.jpg');
+                    background-repeat: no-repeat;
+                }
+                #box{
+                    background: #73e600;
+                    padding: 10px;
+                    border: 1px solid#000;
+                    width: 30%;
+                }
+
+            </style>
+</head>
+
+
+<body>
+    <h1>Welcome to Minskole....</h1>
+
+
+<!-- MOUSE EVENTS -->
+
+    <!-- <div id="box" class="test">
+        <h2>Mouse Events:</h2>
+        <p>All the different visitors' actions that a web page can respond to are called events.</p>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            // // single click:
+            // $('#box').click(function(){
+            //       $('#box').css('background', '#009999');
+            // //    var a = $('#box').html();
+            // //    console.log(a);
+            // });
+
+            // // double click
+            // $('#box').dblclick(function(){
+            //     $('#box').css('background', '#ff8000');
+            // });
+
+
+            //  // contextmenu
+            //  $('#box').contextmenu(function(){
+            //     $('#box').css('background', '#cc0066');
+            // });
+
+
+            //  // mouseenter
+            //  $('#box').mouseenter(function(){
+            //     $('#box').css('background', '#7700b3');
+            // });
+
+
+            //  // mouseleave
+            //  $('#box').mouseleave(function(){
+            //     $('#box').css('background', 'aqua');
+            // });
+        });
+    </script> -->
+
+
+    <!-- KEYBOARD EVENTS: -->
+
+    <!-- 1 -- keypress
+         2 -- keydown
+         3 -- keyup -->
+
+         <div id="box">
+            <h2>Keyboard Events:</h2>
+            <p>The keypress() method triggers the keypress event, or attaches
+                 a function to run when a keypress event occurs.</p>
+        </div>
+    
+         <!-- <script src="js/jquery.js"></script> -->
+
+        <script>
+
+                // KeyPress: when you press anykey then change background color
+                $(document).ready(function(){
+                $('body').keypress(function(){
+                    $(this).css('background-color', '#00b386');
+                });
+
+                // KeyDown
+                $('body').keydown(function(){
+                    $(this).css('background-color', '#ff0066');
+                });
+
+
+                // KeyUp:
+                $('body').keyup(function(){
+                    $(this).css('background-color', '#660066');
+                });
+            });
+        </script> 
+
+
+          <!-- FORM EVENTS -->
+
+            <!--1 --- focus()
+                2 --- blur()
+                3 --- change()
+                4 --- Select()
+                5 --- Submit() -->
+
+                <!-- <h1>Form Events</h1>
+                <form action="" id="sform">
+                    <label for="name">Name:</label>
+                    <input type="text" id="sname"><br><br>
+
+                    <label for="class">Class:</label>
+                    <input type="text" id="sclass"><br><br>
+
+                    <label for="country">Country</label>
+                    <select id="scountry">
+                        <option value="India">India</option>
+                        <option value="Shrilanka">Shri Lanka</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Japan">Japan</option>
+                    </select>  <br><br>  
+                    <button>Submit</button>
+                </form>
+
+                <div id="test" style="border:2px solid #cc0052; margin-top: 20px;"></div> 
+            
+                    <script src="js/jquery.js"></script>
+                    <script src="js/events.js"></script> -->
+           
+
+
+                <!-- WINDOWS EVENT: -->
+
+                   <!-- 1 --- load() --- remove the version 3.0
+                        2 --- unload() --- remove the version 3.0
+                        3 --- resize()
+                        4 --- Scroll()
+                     -->
+
+                     <!-- <h2>Windows Event:</h2>
+                     <div id="box">
+                         <h2>load()</h2>
+                         <p>
+                            The load event is sent to an element when it and all 
+                            sub-elements have been completely loaded. This event 
+                            can be sent to any element associated with a URL: 
+                            images, scripts, frames, iframes, and the window object.
+                         </p>
+                         <h2>unload()</h2>
+                         <p>
+                            The unload event is sent to the window element when the
+                             user navigates away from the page. This could mean one
+                              of many things. The user could have clicked on a link
+                               to leave the page, or typed in a new URL in the address bar.
+                                The forward and back buttons will trigger the event.
+                                 Closing the browser window will cause the event to
+                                  be triggered. Even a page reload will first create an unload event.
+                        </p>
+                        <h2>resize()</h2>
+                        <p>
+                            Code in a resize handler should never rely on the number of times
+                            the handler is called. Depending on implementation, resize events
+                            can be sent continuously as the resizing is in progress 
+                            (the typical behavior in Internet Explorer and WebKit-based 
+                            browsers such as Safari and Chrome), or only once at the end 
+                            of the resize operation (the typical behavior in some other browsers such as Opera).
+                        </p>
+                        <h2>scroll()</h2>
+                        <p>
+                            The scroll event occurs when the user scrolls in the
+                             specified element. The scroll event works for all
+                              scrollable elements and the window object (browser window).
+                               The scroll() method triggers the scroll event, or
+                                attaches a function to run when a scroll event occurs.
+                        </p>
+                     </div>
+
+                     <p>
+                        Commonly Used jQuery Event Methods. click() The click() method 
+                        attaches an event handler function to an HTML element. dblclick()
+                        The dblclick() method attaches an event handler function to an
+                        HTML element. mouseenter() mouseleave() mousedown() mouseup() hover() focus()
+                    </p>
+
+                   <script src="js/jquery.js"></script>
+                   <script src="js/events.js"></script> -->
+                
+               
+
+
+        <!-- Get Methods -->
+
+                    <!-- text(),
+                        html(), 
+                        attr(),
+                        val() -->
+                        
+                        
+                        <!-- <div id="box" class="test abc" style="width:30%;">
+                        <h2>jQuery Get Method:</h2>
+                        <p>The jQuery get() method sends asynchronous http<span>GET request</span> to the server and retrieves the data.</p>
+                        </div>
+
+                  <script src="js/jquery.js"></script>
+                        <script>
+
+                            $(document).ready(function(){
+                            
+                            // display the box content with tags
+                            
+                               var a =  $('#box').html();
+                               console.log(a);                        
+
+                            // display body of the code
+                    
+                               var a =  $('body').html();
+                               console.log(a);
+                            
+
+                            // target the box p tag:
+                          
+                               var a =  $('#box p').html();
+                               console.log(a);
+
+                            // // display the only text with tags
+                            
+                               var a =  $('#box p').text();
+                               console.log(a);
+
+                            // // display the attribute of tags       
+                                var a =  $('#box').attr('class');
+                                console.log(a);
+
+                            });
+                        </script> -->
+
+                        
+                        
+                        <!-- val() -->
+
+                        <!-- <h1>jQuery Val Method</h1>
+                        <br>
+                        <form action="" id="sform">
+                            <label for="name">Name : </label>
+                            <input type="text" id="sname"><br><br>
+        
+                            <label for="class">Class:</label>
+                            <input type="text" id="sclass"><br><br>
+        
+                            <label for="country">Country</label>
+                            <select id="scountry">
+                                <option value="India">India</option>
+                                <option value="Shrilanka">Shri Lanka</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Japan">Japan</option>
+                            </select>  <br><br>  
+                            <button>Submit</button>
+                        </form>
+
+                        <script src="js/jquery.js"></script>
+                        <script>
+                            $(document).ready(function(){
+                                $('#sform').submit(function(){
+                                var name = $('#sname').val()
+                                var classname = $('#sclass').val()
+                                var country = $('#scountry').val()
+                                alert("Hello "+ name + " Class: "+ classname + " Country: "+ country);
+                                });
+                            });
+                        </script>  
+ -->
+
+
+
+
+
+</body>
+</html>
+
+       
+
+        

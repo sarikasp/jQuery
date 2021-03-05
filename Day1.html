@@ -1,0 +1,165 @@
+<!-- Example: -->
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>Day First</title>
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <style>
+            body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+            #test1{
+                background: #ffcc99;
+                height: 170px;
+                width: 220px;
+                border: 2px solid black;
+                padding: .5%;
+                margin-left: 2%;
+            }
+            #test2{
+                background: #80ff80;
+                height: 170px;
+                width: 220px;               
+                margin-left: 2%;
+                border: 2px solid black;
+                padding: .5%;
+                
+            }
+            #test3{
+                background: #ff99ff;
+                height: 170px;
+                width: 220px;
+                margin-left: 2%;
+                border: 2px solid black;
+                padding: 0.5%;
+            }
+        </style>
+        </head>
+      
+    <body>
+        <h1>Welcome to Minskole....</h1>
+
+            <div class="row">
+              <div class="col-md-4" id="test1">
+                    <div class="caption">
+                      <h3>ClassRoom Traning</h3>
+                      <p>Get Trained & Placed at MinSkole 
+                          along with Live Projects & Certification
+                      </p>
+                    </div>
+              </div>
+              <div class="col-md-4" id="test2">
+                    <div class="caption">
+                      <h3>Online Traning</h3>
+                      <p>Get Trained online with our Instructor Led 
+                          Trainers & get same benefits as Class Room Training
+                      </p>
+                    </div>
+              </div>
+              
+              <div class="col-md-4" id="test3">
+                    <div class="caption">
+                      <h3>Institutional Traning</h3>
+                      <p>Institutional Training Workshops For
+                          Students & Faculty Memebers from Colleges
+                     </p>
+                    </div>
+              </div>
+            </div>
+
+
+        <script src="js/jquery.js"></script>
+            <script>
+                $(document).ready(function(){
+                    var a = $('#test1').html();
+                    console.log(a);
+        
+                    var b = $('#test2').html();
+                    console.log(b);
+
+                    var c = $('#test3').html();
+                    console.log(c);
+                });
+            </script>
+
+
+<!-- jQuery selectors: -->
+<!-- Advance Selector 
+    $('*')   // target all html tag in body
+    $('ul li')  // target the all li in ul list
+    $('.abc, .xyz')   // target multiple classes
+    $('div, h1, p')   // target multiple tags
+    $('p:first')   // target the first paragraph in page
+    $('p:last')   // target the lasst paragraph in page
+    $('li:even')   // target the all even list element in page
+    $('li:odd')   // target the all odd list element in page
+
+-->
+
+    <div class="test" style="height: 200px;width: 450px; border: 2px solid black; padding: 2px;">
+        <h2>Advance Selector </h2>
+            <p>In some more advanced web applications, you need more control
+                 than just referencing several element types or one with
+                  a specific ID. You can have several classes and
+                   subclasses and referencing one of them might not be
+                 enough to properly work with your elements. 
+            </p>
+    </div>
+    <ul id="list">
+        <li>Orachid</li>
+        <li class="test">Rose</li>
+        <li>Lily</li>
+        <li class="test">Daisy</li>
+        <li>Oleander</li>
+    </ul> 
+            <script src="js/jquery.js"></script> 
+            <script>
+                $(document).ready(function(){
+
+                    // // target the list id
+                    // $('#list').css("color", "#cc0052");
+
+                    // // target the list border
+                    // $('#list').css('border', '2px solid #ff9900');
+
+                    // // target each element list-item border
+                    // $('#list li').css('border', '2px solid #00b38f');
+
+                    // // targt the test class and apply blue border
+                    // $('.test').css('border', '2px solid blue');
+
+                    // // target the all html element
+                    // $('*').css('border', '2px solid #cc0000');
+
+                    // // target the list first element
+                    // $('li:first').css('border', '2px solid #cc0000');
+
+                    // // target the first list element content
+                    // $('li:first-child').css('border', '2px solid #cc0000');
+
+                    // // target the list last element
+                    // $('li:last').css('border', '2px solid #cc0000');
+
+                    // // target the list third element
+                    // $('ul li:eq(2)').css('border', '2px solid #cc0000');
+
+                    // // target the list fifth element
+                    // $('ul li:eq(4)').css('border', '2px solid #cc0000');
+
+                    // // target the greater than 2 list element
+                    // $('ul li:gt(2)').css('color', '#cc0000');
+
+                    // // target the less than 3 list element list element
+                    $('ul li:lt(3)').css('color', '#cc0000');
+                });
+            </script>
+
+
+
+            </body>
+            </html>

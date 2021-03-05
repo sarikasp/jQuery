@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day Fifth</title>
+
+    <style> 
+         body{
+                font-family: Constantia;
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+            }
+            #box2{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            /* border: 10px solid#000; */
+            border: 2px solid#000;
+            width: 30%;
+        }
+        #box4{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            /* border: 10px solid#000; */
+            border: 2px solid#000;
+            width: 200px;
+        }
+        #test{
+            background: lightsteelblue;
+            padding: 5px;
+        }
+
+        #box3{
+            background: rgb(109, 235, 228);
+            padding: 10px;
+            border: 2px solid#000;
+            width: 230px;
+            height: 80px;
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Minskole....</h1>
+    
+    <!-- Position() & offset() methods -->
+            
+    <!-- position: Relative to its perent element
+         offset: Relative to the document -->
+
+
+    <!-- <div id="box2">
+    <h2>Position & Offset Methods:</h2>
+    <p>The jQuery position () method makes you able to <span> retrieve the current position</span> of an element relative to the parent element.
+        The jQuery offset() method is used to get the current offset of the first matched element.</p>
+    </div><br> 
+    <button id="btnPosition">Position</button>
+    <button id="btnOffset">Offset</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnPosition').click(function(){ 
+                var x = $('#box2 h2').position(); 
+                console.log("Top : " + x.top + " Left "+ x.left);                          
+            });
+
+            $('#btnOffset').click(function(){                        
+                var x = $('#box2 h2').offset();
+                // //get sepreate margin top and left
+                console.log("Top : " + x.top + " Left "+ x.left);
+
+                // set perticular element position
+                //  $('#box2 h2').offset({top:100,left:200});
+            });
+        });
+    </script>  -->
+
+
+
+<!--  scrollTop() & scrollLeft() Methods  -->
+
+    <!-- <h2>jQuery ScrollTop & ScrollLeft Methods:</h2>
+    <button id="btnScrollTop">scrollTop</button>
+    <button id="btnScrollLeft">scrollLeft</button>
+    <br><br>        
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, 
+                                ipsam cumque qui reiciendis fugit totam vero blanditiis,
+                                architecto non dignissimos dolor nemo nesciunt? Cumque numquam perspiciatis
+                                nam architecto ab illum ratione et consectetur quibusdam repudiandae deserunt
+                                commodi cupiditate iusto amet esse maxime nulla porro accusantium, 
+                                error quasi libero rem ad. Laborum ratione autem blanditiis incidunt
+                                nulla? At cupiditate, ratione esse accusantium nisi dolore saepe est repudiandae,
+                                natus facere facilis ipsa a! Dolores consequuntur vel consequatur qui sapiente 
+                                voluptatem natus nulla asperiores dolor, fugiat similique quia impedit officiis provident,
+                                magnam quos iste et doloremque doloribus. Eos quae, pariatur similique repellat ab,
+                                accusamus nihil rerum commodi expedita laudantium fugiat vel natus! Quae,
+                                totam eveniet! Atque fugiat repudiandae odit, doloribus, optio quas distinctio
+                                officiis dolor quia odio natus reprehenderit harum ad dignissimos nisi dolorem
+                                vitae labore ipsum soluta ut quisquam illo corporis temporibus voluptates.
+                                Voluptate architecto dolores nulla, incidunt minima repudiandae,
+                                enim dicta quos, ipsum eveniet quas explicabo sunt quod veritatis 
+                                quibusdam eaque assumenda ipsa! Facilis voluptatum error mollitia a,
+                                quidem nam atque nisi quam totam, sunt voluptates vel. 
+                                Explicabo architecto modi, quisquam iste qui expedita omnis? 
+                                Natus rem sequi omnis incidunt unde totam a quasi officiis
+                                quisquam! Optio dicta id laboriosam reiciendis!<br><br>
+
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, 
+                                ipsam cumque qui reiciendis fugit totam vero blanditiis,
+                                architecto non dignissimos dolor nemo nesciunt? Cumque numquam perspiciatis
+                                nam architecto ab illum ratione et consectetur quibusdam repudiandae deserunt
+                                commodi cupiditate iusto amet esse maxime nulla porro accusantium, 
+                                error quasi libero rem ad. Laborum ratione autem blanditiis incidunt
+                                nulla? At cupiditate, ratione esse accusantium nisi dolore saepe est repudiandae,
+                                natus facere facilis ipsa a! Dolores consequuntur vel consequatur qui sapiente 
+                                voluptatem natus nulla asperiores dolor, fugiat similique quia impedit officiis provident,
+                                magnam quos iste et doloremque doloribus. Eos quae, pariatur similique repellat ab,
+                                accusamus nihil rerum commodi expedita laudantium fugiat vel natus! Quae,
+                                totam eveniet! Atque fugiat repudiandae odit, doloribus, optio quas distinctio
+                                officiis dolor quia odio natus reprehenderit harum ad dignissimos nisi dolorem
+                                vitae labore ipsum soluta ut quisquam illo corporis temporibus voluptates.
+                                Voluptate architecto dolores nulla, incidunt minima repudiandae,
+                                enim dicta quos, ipsum eveniet quas explicabo sunt quod veritatis 
+                                quibusdam eaque assumenda ipsa! Facilis voluptatum error mollitia a,
+                                quidem nam atque nisi quam totam, sunt voluptates vel. 
+                                Explicabo architecto modi, quisquam iste qui expedita omnis? 
+                                Natus rem sequi omnis incidunt unde totam a quasi officiis
+                                quisquam! Optio dicta id laboriosam reiciendis <br><br>
+                    
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, 
+                                ipsam cumque qui reiciendis fugit totam vero blanditiis,
+                                architecto non dignissimos dolor nemo nesciunt? Cumque numquam perspiciatis
+                                nam architecto ab illum ratione et consectetur quibusdam repudiandae deserunt
+                                commodi cupiditate iusto amet esse maxime nulla porro accusantium, 
+                                error quasi libero rem ad. Laborum ratione autem blanditiis incidunt
+                                nulla? At cupiditate, ratione esse accusantium nisi dolore saepe est repudiandae,
+                                natus facere facilis ipsa a! Dolores consequuntur vel consequatur qui sapiente 
+                                voluptatem natus nulla asperiores dolor, fugiat similique quia impedit officiis provident,
+                                magnam quos iste et doloremque doloribus. Eos quae, pariatur similique repellat ab,
+                                accusamus nihil rerum commodi expedita laudantium fugiat vel natus! Quae,
+                                totam eveniet! Atque fugiat repudiandae odit, doloribus, optio quas distinctio
+                                officiis dolor quia odio natus reprehenderit harum ad dignissimos nisi dolorem
+                                vitae labore ipsum soluta ut quisquam illo corporis temporibus voluptates.
+                                Voluptate architecto dolores nulla, incidunt minima repudiandae,
+                                enim dicta quos, ipsum eveniet quas explicabo sunt quod veritatis 
+                                quibusdam eaque assumenda ipsa! Facilis voluptatum error mollitia a,
+                                quidem nam atque nisi quam totam, sunt voluptates vel. 
+                                Explicabo architecto modi, quisquam iste qui expedita omnis? 
+                                Natus rem sequi omnis incidunt unde totam a quasi officiis
+                                quisquam! Optio dicta id laboriosam reiciendis!
+
+
+    <div id="box3">
+    </div>                         
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+
+            $('#box3').html("");
+            $('#box3').append("Top: "+ $(window).scrollTop());
+            $('#box3').append("<br>Left: "+ $(window).scrollLeft());
+        });  
+
+        $('#btnScrollTop').click(function(){
+            $(window).scrollTop(200);
+        });  
+
+        $('#btnScrollLeft').click(function(){
+            $(window).scrollLeft(100);
+        });
+
+    }); 
+
+    </script> -->
+
+
+  <!-- has Class -->
+
+    <!-- <div id="box2" class="test">
+    <h2 class="test">Has Class:</h2>
+    <p>The hasClass() method checks if any of the <span> selected elements have a</span> specified class name. 
+        If ANY of the selected elements has the specified class name, this method will return "true".</p>
+    </div><br> 
+   <button id="btnHasClass">HasClassBtn</button>
+    <script src="js/jquery.js"></script>
+                            
+    <script>
+        $(document).ready(function(){            
+            $('#btnHasClass').click(function(){ 
+                //  console.log($('#box2 h2').hasClass('test'));
+                var a = $('#box2 h2').hasClass('test');
+
+                if( a == true){
+                    console.log('Yes');
+                }else{
+                    console.log('No');
+                }
+            });
+        });
+    </script> -->
+                                  
+
+
+
+
+<!--       Hide() Show() & toggle() method -->
+
+
+    <div id="box2" class="test">
+    <h2 class="test"> Hide, Show & Toggle Methods:</h2>
+    <p>The hide and show HTML elements with the <span>hide() and show()</span> methods.
+        The toggle() method toggles between hide() and show() for the selected elements.</p>
+    </div><br> 
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnToggle">Toggle</button>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){            
+            $('#btnHide').click(function(){ 
+                // $('#box2').hide(); 
+                // $('#box2').hide('slow'); 
+                // $('#box2').hide('fast'); 
+                // $('#box2').hide(1000); 
+                $('#box2').hide(3000, function(){
+                    console.log("Now it is Hidden");
+                }); 
+            });
+        $('#btnShow').click(function(){ 
+            // $('#box2').show(); 
+            //  $('#box2').show('slow');  
+            // $('#box2').show('fast'); 
+            $('#box2').show(1000, function(){
+                    console.log("Now it is Shown");
+                }); 
+            });
+        $('#btnToggle').click(function(){ 
+            $('#box2').toggle(1000, function(){
+                    console.log("Hey Toggle..!!!!");
+                }); 
+            });
+
+        });
+    </script>
+
+</body>
+</html>
